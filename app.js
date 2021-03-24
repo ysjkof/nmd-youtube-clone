@@ -9,6 +9,8 @@ import globalRouter from "./routers/globalRouter";
 const app = express();
 
 app.set("view engine", "pug");
+// directorydㅔ서 file을 보내주는 미들웨어
+app.use("/uploads", express.static("uploads"));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
