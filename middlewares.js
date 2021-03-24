@@ -1,17 +1,16 @@
-import multer from 'multer';
-import routes from './routes';
+import multer from "multer";
+import routes from "./routes";
 
-const multerVideo = multer({ dest: 'uploads/videos/' }); // "/uploads/videos/" 라고 쓰면 컴퓨터의 로컬에 비디오를 저장한다. 주의
+const multerVideo = multer({ dest: "videos/" });
 
 export const localsMiddleware = (req, res, next) => {
-  res.locals.siteName = 'WeTube';
+  res.locals.siteName = "WeTube";
   res.locals.routes = routes;
   res.locals.user = {
-    isAuthenticated: false,
-    id: 1,
+    isAuthenticated: true,
+    id: 1
   };
   next();
 };
 
-export const uploadVideo = multerVideo.single('videoFile');
-// upload.pug에 input type file의 name에 videoFile가 들어간다.
+export const uploadVideo = multerVideo.single("videoFile");

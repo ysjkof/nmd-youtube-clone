@@ -1,16 +1,16 @@
-# study Youtube clone
+# WeTube
 
 Cloning Youtube with Vanilla and NodeJS
 
-## Pages
+## Pages:
 
-- [ ] home
-- [x] join
+- [ ] Home
+- [x] Join
 - [x] Login
 - [x] Search
 - [ ] User Detail
-- [ ] Edit profile
-- [ ] Change Password
-- [ ] Upload
+- [x] Edit Profile
+- [x] Change Password
+- [x] Upload
 - [ ] Video Detail
-- [ ] Edit Video
+- [x] Edit Video
