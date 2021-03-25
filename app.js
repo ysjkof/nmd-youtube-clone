@@ -10,7 +10,9 @@ const app = express();
 
 app.set("view engine", "pug");
 // directorydㅔ서 file을 보내주는 미들웨어
+// /uploads로 접근하면 uploads폴더로 보낸다
 app.use("/uploads", express.static("uploads"));
+app.use("/static", express.static("static"));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
