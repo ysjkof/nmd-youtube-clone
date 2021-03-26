@@ -10,7 +10,7 @@ import {
   postJoin,
   postLogin,
   postGithubLogIn,
-  getMe
+  getMe,
 } from "../controllers/userController";
 import { onlyPrivate, onlyPublic } from "../middlewares";
 
